@@ -82,7 +82,7 @@ class LoginCard extends StatelessWidget {
                   width: 100.0,
                   child: TextButton(
                     onPressed: () => {print("HELLO WORLD")},
-                    child: const Text('Submit',
+                    child: const Text('Login',
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 40, 57),
                             fontSize: 20.0,
@@ -114,6 +114,83 @@ class RegisterPage extends StatelessWidget {
     return Card(
       child: Column(
         children: <Widget>[
+          const Padding(
+            padding:
+                EdgeInsets.only(left: 16.0, right: 16.0, top: 5.0, bottom: 5.0),
+            child: Text("Register For Cybernet AI",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 0, 40, 57),
+                    fontSize: 70.0,
+                    fontWeight: FontWeight.w100)),
+          ),
+          const Padding(
+              padding: EdgeInsets.all(40.0),
+              child: Text(
+                  "Start your journey question documents and knowing your data is secured using AI 🔒",
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 0, 40, 57),
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w900))),
+          const Padding(
+              padding: EdgeInsets.only(left: 16.0, right: 16.0),
+              child: const Row(
+                children: <Widget>[
+                  Flexible(
+                    child: TextField(
+                        decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'First Name',
+                    )), // <-- Wrapped in Flexible.
+                  ),
+                  const SizedBox(width: 10),
+                  Flexible(
+                    child: TextField(
+                        decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Last Name',
+                    )), // <-- Wrapped in Flexible.
+                  ),
+                ],
+              )),
+          const SizedBox(height: 10),
+          const Padding(
+              padding: EdgeInsets.only(left: 16.0, right: 16.0),
+              child: TextField(
+                  decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Email',
+              ))),
+          const SizedBox(height: 10),
+          const Padding(
+              padding: EdgeInsets.only(left: 16.0, right: 16.0),
+              child: TextField(
+                  decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Username',
+              ))),
+          const SizedBox(height: 10),
+          const Padding(
+              padding: EdgeInsets.only(left: 16.0, right: 16.0),
+              child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                  ))),
+          Padding(
+              padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+              child: Container(
+                height: 50.0,
+                width: 100.0,
+                child: TextButton(
+                  onPressed: () => {print("HELLO WORLD")},
+                  child: const Text('Register',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 40, 57),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w100)),
+                ),
+              )),
           Padding(
             padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
             child: TextButton(
@@ -128,8 +205,6 @@ class RegisterPage extends StatelessWidget {
     );
   }
 }
-
-
 
 // class DocumentList extends StatelessWidget {
 //   const DocumentList({super.key});
