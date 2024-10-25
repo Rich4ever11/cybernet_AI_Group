@@ -24,11 +24,12 @@ class MyApp extends StatelessWidget {
           //         fontWeight: FontWeight.w300),
           //   ),
           // ),
+          backgroundColor: Colors.black54,
           body: Container(
-        padding: const EdgeInsets.all(10),
-        margin: const EdgeInsets.all(5),
-        child: LoginCard(),
-      )),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.all(5),
+            child: LoginCard(),
+          )),
     );
   }
 }
@@ -39,26 +40,28 @@ class LoginCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        color: Color.fromARGB(255, 255, 251, 251),
         margin: const EdgeInsets.all(8.0),
+        borderOnForeground: true,
         child: Column(
           children: <Widget>[
             const Padding(
               padding: EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 5.0, bottom: 5.0),
+                  left: 16.0, right: 16.0, top: 2.0, bottom: 2.0),
               child: Text("Login For Cybernet AI",
                   style: TextStyle(
                       color: Color.fromARGB(255, 0, 40, 57),
-                      fontSize: 70.0,
-                      fontWeight: FontWeight.w100)),
+                      fontSize: 75.0,
+                      fontWeight: FontWeight.w900)),
             ),
             const Padding(
                 padding: EdgeInsets.all(40.0),
                 child: Text(
-                    "Find extensive ways to ask questions about large documents using AI and be happy that your document and information is secured 🔒",
+                    "Find extensive ways to ask questions about large documents using AI 🔒",
                     style: TextStyle(
                         color: Color.fromARGB(255, 0, 40, 57),
                         fontSize: 20.0,
-                        fontWeight: FontWeight.w900))),
+                        fontWeight: FontWeight.w100))),
             const Padding(
                 padding: EdgeInsets.only(left: 16.0, right: 16.0),
                 child: TextField(
@@ -121,7 +124,7 @@ class RegisterPage extends StatelessWidget {
                 style: TextStyle(
                     color: Color.fromARGB(255, 0, 40, 57),
                     fontSize: 70.0,
-                    fontWeight: FontWeight.w100)),
+                    fontWeight: FontWeight.w900)),
           ),
           const Padding(
               padding: EdgeInsets.all(40.0),
@@ -130,7 +133,7 @@ class RegisterPage extends StatelessWidget {
                   style: TextStyle(
                       color: Color.fromARGB(255, 0, 40, 57),
                       fontSize: 20.0,
-                      fontWeight: FontWeight.w900))),
+                      fontWeight: FontWeight.w100))),
           const Padding(
               padding: EdgeInsets.only(left: 16.0, right: 16.0),
               child: const Row(
